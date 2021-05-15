@@ -1,0 +1,16 @@
+{
+  "name": "colorthe",
+  "version": "1.0.0",
+  "description": "asjlkasjlfa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "paco",
+  "license": "ISC",
+  "dependencies": {
+    "color": "^3.1.3",
+    "moment": "^2.29.1",
+    "underscore": "^1.13.1"
+  }
+}
