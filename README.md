@@ -1,6 +1,8 @@
+Use this app [here](https://mathphysmx.github.io/color-models/).
+
 I developed this app for me to learn to identify colors of either RGB or HSL models. Ultimate goal is to create more engaging analytics dashboards and data visualization.
 
-This code is based on [this](https://codepen.io/polly_nomial/pen/sGKIv) random RGB color generator. The author of that code uses JQuery, her I use vanilla Javascript.
+This code is based on [this](https://codepen.io/polly_nomial/pen/sGKIv) random RGB color generator. The author of that code uses JQuery, here I use vanilla Javascript.
 
 # How to use
 
