@@ -1,24 +1,31 @@
-# Tutorials
+I developed this app for me to learn to identify colors of either RGB or HSL models. Ultimate goal is to create more engaging analytics dashboards and data visualization.
 
-## Web Development
+This code is based on [this](https://codepen.io/polly_nomial/pen/sGKIv) random RGB color generator. The author of that code uses JQuery, her I use vanilla Javascript.
+
+# How to use
 
 ``` bash
+
+cd path/to/this/project
+
 npm install color
 
 npm init
+
+browserify main.js -o bundle.js
+
 ```
 
-This code is based on [this](https://codepen.io/polly_nomial/pen/sGKIv) random RGB color generator. The author of that code uses JQuery, we use vanilla Javascript.
+# Tutorials for me to develop this app
+
+## Web Development
+
 
 [JavaScript: change a webpage background color](https://sebhastian.com/javascript-change-background-color/)
 
 [dynamic styling](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Using_dynamic_styling_information)
 
-tutorial [here](https://dev.to/programliftoff/create-a-basic-webpage-with-css-and-javascript--104i)
-
-Source code [here](https://codepen.io/polly_nomial/pen/sGKIv)
-
-[Mix colosr in CSS](https://css-tricks.com/mixing-colors-in-pure-css/)
+Web dev tutorial [here](https://dev.to/programliftoff/create-a-basic-webpage-with-css-and-javascript--104i)
 
 ## Node tutorial
 
@@ -26,13 +33,11 @@ Source code [here](https://codepen.io/polly_nomial/pen/sGKIv)
 
 [Node.js YouTube tutorial: require function, import/export module - Node.js Tutorial | IT Articles](https://www.youtube.com/watch?v=dRvs6n9Rx6A)
 
-browserify main.js -o bundle.js
-
 [Intall and use a package](https://www.sitepoint.com/npm-guide/)
 
 [How to install a node package](https://docs.npmjs.com/using-npm-packages-in-your-projects)
 
-# NPM/Javascript Packages
+# npm/Javascript Packages for color manipulation
 
 * [node npm trends](https://www.npmtrends.com/chroma-js-vs-color-vs-color-js-vs-tinycolor-vs-tinycolor2)
 
@@ -56,3 +61,7 @@ Winners of libraries for color manipulation:
 
 # Color Theory
 [Use HSL color model](https://uxdesign.cc/a-coders-guide-to-colors-don-t-use-rgb-unless-you-re-an-expert-in-color-theory-use-this-instead-30277dd2160f)
+
+Polyomial color interpolation [here](https://codepen.io/polly_nomial/pen/sGKIv)
+
+[Mix colosr in CSS](https://css-tricks.com/mixing-colors-in-pure-css/)
