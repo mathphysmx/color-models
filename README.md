@@ -4,7 +4,7 @@ I developed this app for me to learn to identify colors of either RGB or HSL mod
 
 This code is based on [this](https://codepen.io/polly_nomial/pen/sGKIv) random RGB color generator. The author of that code uses JQuery, here I use vanilla Javascript.
 
-# How to use
+# How to use locally in your computer
 
 ``` bash
 
