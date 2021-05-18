@@ -25,16 +25,17 @@ function changeBackgroundColor() {
         return array[Math.floor(Math.random() * array.length)];
     }
     
-    var selectedColorModel = 'rgb';
+    var selectedColorModel = 'hsl';
     if (selectedColorModel == 'hsl') {
-        var hue = randomPick(range(0, 360, 60));
-        var saturation = "100%";
-        var luminosity = "50%";
+        let hue = randomPick(range(0, 360, 60));
+        let saturation = "100%";
+        let luminosity = "50%";
         var colorValues = "hsl(" + hue + ", " + saturation + ", " + luminosity + ")";    
     } else { // RGB model random selection
-        var red = randomPick(range(0, 255, 128));
-        var green = randomPick(range(0, 255, 128));
-        var blue = randomPick(range(0, 255, 128));
+        let step = 128;
+        let red = randomPick(range(0, 255, step));
+        let green = randomPick(range(0, 255, step));
+        let blue = randomPick(range(0, 255, step));
         var colorValues = "rgb(" + red + ", " + green + ", " + blue + ")";
     }
 
