@@ -16,28 +16,26 @@
 
 function changeBackgroundColor() {   
 
-    // RGB model random selection
-    function randomRGB() {
-        var myArray = [0, 128, 255];
-        return myArray[Math.floor(Math.random() * myArray.length)];
+    // Python range() function equivalent
+    // https://stackoverflow.com/a/44957114
+    const range = (start, stop, step = 1) =>
+    Array(Math.ceil((stop - start) / step)).fill(start).map((x, y) => x + y * step)
+
+    function randomPick(array) {
+        return array[Math.floor(Math.random() * array.length)];
     }
-    var rgbColor = "rgb(" + randomRGB() + ", " + randomRGB() + ", " + randomRGB() + ")";
-
-
-    // HSL model. Random selection
-    function randomHue() {
-        var hues = [0, 60, 120, 180, 240];
-        return hues[Math.floor(Math.random() * hues.length)];
-    }
-    var saturation = "100%";
-    var luminosity = "50%";
-    var hslColor = "hsl(" + randomHue() + ", " + saturation + ", " + luminosity + ")";
-
-    var selectedColorModel = 'hsl';
+    
+    var selectedColorModel = 'rgb';
     if (selectedColorModel == 'hsl') {
-        var colorValues = hslColor;
-    } else {
-        var colorValues = rgbColor;
+        var hue = randomPick(range(0, 360, 60));
+        var saturation = "100%";
+        var luminosity = "50%";
+        var colorValues = "hsl(" + hue + ", " + saturation + ", " + luminosity + ")";    
+    } else { // RGB model random selection
+        var red = randomPick(range(0, 255, 128));
+        var green = randomPick(range(0, 255, 128));
+        var blue = randomPick(range(0, 255, 128));
+        var colorValues = "rgb(" + red + ", " + green + ", " + blue + ")";
     }
 
     // document.body.style.background = "red"; // OK
