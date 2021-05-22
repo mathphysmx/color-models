@@ -27,8 +27,11 @@ function changeBackgroundColor() {
     
     var selectedColorModel = 'hsl';
     if (selectedColorModel == 'hsl') {
-        let hue = randomPick(range(0, 360, 60));
-        let saturation = "100%";
+        let hueStep = 60;
+        let saturationPercentStep = 25;
+        // let luminosityPercentStep = 25;
+        let hue = randomPick(range(0, 360, hueStep));
+        let saturation = randomPick(range(25, 100+1, saturationPercentStep)) + "%";
         let luminosity = "50%";
         var colorValues = "hsl(" + hue + ", " + saturation + ", " + luminosity + ")";    
     } else { // RGB model random selection

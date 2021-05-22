@@ -1,0 +1,1 @@
+Tutorial to manipulate multiple colors at once using GIMP [here](https://www.gimp.org/tutorials/Basic_Color_Curves/).
